@@ -2,7 +2,7 @@
 
 ## 💡 **Senior Applied AI/ML Engineer | LLM Systems & Production Architecture**  
 
-I am a Senior Engineer specializing in production-grade Applied AI .  With 16+ years of engineering experience in mission-critical high-availability systems sectors like Power Grids, Pharma, and Aeronautics. I hold an M.Sc. in AI (Distinction), and I combine this deep architectural discipline with modern Deep Learning to build robust, scalable ML solutions that perform reliably in the real world.
+I am a Senior Engineer specializing in production-grade Applied AI , ML and Data engineering.  With 16+ years of engineering experience in mission-critical high-availability systems sectors like Power Grids, Pharma, and Aeronautics. I hold an M.Sc. in AI (Distinction), and I aim to build efficient solutions with modern Deep Learning that perform fast and reliably in the real world.
 
 ---
 
