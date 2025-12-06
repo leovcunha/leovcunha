@@ -64,7 +64,7 @@ I am a Senior Engineer specializing in production-grade Applied AI , ML and Data
 
 ---
 
-**ML Algorithms from Scratch**  
+### 4. **ML Algorithms from Scratch**  
 *Classical machine learning from first principles in NumPy*
 
 - 10+ algorithms implemented entirely from scratch (KNN, Logistic Regression, Random Forest, SVM, MLP, PCA, Clustering, etc.)  
