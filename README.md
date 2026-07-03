@@ -11,15 +11,38 @@ I am a Senior Engineer specializing in production-grade Applied AI , ML and Data
 - **AI & Agentic Systems**: **PyTorch**, **LLM Architectures** (RAG, Multi-Agent Systems/CrewAI), LangChain, Computer Vision (OpenCV, OpenVino), Explainable AI.
 - **Production MLOps**: **Kubernetes**, **Docker**, **Infrastructure as Code (Terraform, AWS CDK)**, Pipeline Orchestration (Airflow, Dagster, Kedro).
 - **Data Engineering at Scale**: **PySpark**, **Databricks**, Distributed Processing, Data Warehousing (BigQuery, Redshift).
-- **Languages**: Python (Expert), JavaScript (React/Node.js).
+- **Languages**: Python (FastAPI), JavaScript (React/Node.js).
 
 ---
 
 ## 📂 **Featured Projects**
 
 ---
+### 1.  AI Customer Service Agent
+A scenario-based, multi-tenant AI Customer Service Agent platform demonstrating stateful multi-turn customer support, dynamic SOP-adherence RAG, and an asynchronous LLM-as-a-judge compliance evaluation engine.
 
-### 1. Low Latency Web Search-RAG
+👉 Live Demo 🚀
+
+Tech Stack: Python | FastAPI (Async) | LangGraph | LangChain | Groq (Llama 3) | Supabase (PostgreSQL + pgvector) | SentenceTransformers | React + Vite | Tailwind CSS | TypeScript | Pytest
+
+🧠Key features and highlights:
+
+Stateful LangGraph Orchestration: Models customer interactions as a structured state graph (Triage -> Retrieval -> Action -> Resolution) to cleanly manage multi-turn conversation history, state transitions, and ticket resolution logic.
+
+Dynamic SOP Context Retrieval (pgvector RAG): Translates customer queries into local vector embeddings on the fly using all-MiniLM-L6-v2 and matches them against tenant-specific SOP rules using a custom vector similarity RPC in Supabase.
+
+Asynchronous Compliance Evaluator: LLM-as-a-judge intercepts agent responses using FastAPI background tasks to execute out-of-band LLM quality audits (evaluating SOP adherence score, tone compliance, policy violations, and hallucination flags) without adding latency to the client response.
+
+Interactive Auditing & Playground Dashboard: Features a front-end management console displaying live compliance metrics, historical aggregates, a document/SOP uploader, and an active chat playground to preview and test agent behaviors.
+
+Tenant & Guest Session Isolation: Segregates database SOP records by tenant ID (supporting pre-seeded demo tenants being four currently implemented: Ecommerce, Credit Card, Internet, and E-learning) and secures guest chat sessions using anonymous JWTs to prevent cross-leakage.
+
+Robust Guardrail Protection: Identifies adversarial prompts and instruction-hijacking at the triage layer, dynamically classifying out-of-boundary queries as off-topic to prevent model manipulation. 
+[Repo](https://github.com/leovcunha/cx-agent)
+
+---
+
+### 2. Low Latency Web Search-RAG
 
 A resilient, async Web Search-RAG pipeline optimized for low latency Time-to-First-Token (TTFT) using live web data.
 
@@ -41,19 +64,6 @@ Server-Sent Events (SSE) Streaming: Streams real-time pipeline status, search so
 
 Client-IP Rate Limiting & Telemetry: Restricts requests using SlowAPI and logs structured JSON telemetry capturing metrics like TTFT, failover status, and the count of search results dropped by the reranker.
 [Repo](https://github.com/leovcunha/pulse-rag)
-
-### 2. **Game Analytics Platform**  
-*Production-grade analytics dashboard with full-stack deployment*
-
-- Kubernetes-ready analytics platform for large-scale game metrics (ETL → API → UI)  
-- **Tech**: FastAPI, React/TypeScript, Polars, Docker, Kubernetes, CI/CD  
-- **Key Features**:
-  - ETL pipeline: CSV → Parquet (50-70% memory savings vs. pandas)
-  - Real-time metrics aggregation and filtering
-  - Kubernetes deployment (Kind for local testing)
-  - Calibration factor updates via API
-  - Scalable architecture ready for production clouds
-- 👉 [`game_analytics` repo](https://github.com/leovcunha/game_analytics)
 
 ---
 
@@ -84,17 +94,6 @@ Client-IP Rate Limiting & Telemetry: Restricts requests using SlowAPI and logs s
   - Finetuned model weights available
   - Comprehensive experiment notebooks (data analysis → preliminary → tuning → final testing)
 - 👉 [`deepfake_detection_cnn_rnn` repo](https://github.com/leovcunha/deepfake_detection_cnn_rnn)
-
----
-
-### 5. **ML Algorithms from Scratch**  
-*Classical machine learning from first principles in NumPy*
-
-- 10+ algorithms implemented entirely from scratch (KNN, Logistic Regression, Random Forest, SVM, MLP, PCA, Clustering, etc.)  
-- **Tech**: Python, NumPy, Unit Tests, Visualizations  
-- **Key Features**: Decision boundary plots, example scripts, comprehensive tests  
-- 👉 [`ML-Algorithms-from-Scratch` repo](https://github.com/leovcunha/ML-Algorithms-from-Scratch)
----
 
 ---
 
