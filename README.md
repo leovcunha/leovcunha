@@ -64,7 +64,7 @@ Client-IP Rate Limiting & Telemetry: Restricts requests using SlowAPI and logs s
 ---
 
 ### 3. **Movie Recommendation Engine**  
-*Collaborative filtering system handling 1M+ user ratings with advanced memory optimization*
+*Collaborative filtering system handling 1M+ user ratings with advanced memory optimization*  
 [live demo](https://movie-recom.graybeach-1591a263.centralus.azurecontainerapps.io/)
 - Hybrid recommendation system (user-based + item-based collaborative filtering)  
 - - **Tech**: FastAPI, React, Scipy (sparse matrices), TMDB API, Caching  
