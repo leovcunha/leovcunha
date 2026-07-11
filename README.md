@@ -21,7 +21,7 @@ I am a Senior Engineer specializing in production-grade Applied AI , ML and Data
 ### 1.  AI Customer Service Agent
 A scenario-based, multi-tenant AI Customer Service Agent platform demonstrating stateful multi-turn customer support, dynamic SOP-adherence RAG, and an asynchronous LLM-as-a-judge compliance evaluation engine.
 
-👉 Live Demo 🚀
+👉 [Live Demo](https://cx-agent-1.onrender.com/) 🚀
 
 Tech Stack: Python | FastAPI (Async) | LangGraph | LangChain | Groq (Llama 3) | Supabase (PostgreSQL + pgvector) | SentenceTransformers | React + Vite | Tailwind CSS | TypeScript | Pytest
 
